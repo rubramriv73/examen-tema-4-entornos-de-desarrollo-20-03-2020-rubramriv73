@@ -1,19 +1,19 @@
 /**
- * @author Jaime Rabasco Ronda
+ * @author Ruben Ramirez Rivera
+ * @version 1.0
  */
-/*Refactorización
-Extrae una superclase Vehículo con los campos
-	num_serie
-	fabricante
-	color
-y los métodos
-	getNum_serie(), setNum_serie()
-	getFabricante(), setFabricante()
-	getColor(), setColor()*/
+/*
+ * Enumeracion de los colores disponibles
+ */
 enum Color {
 	ROJO, AZUL, VERDE, AMARILLO, NARANJA
 };
 
+/*
+ * Clase coche la cual extiende de vehiculo
+ * 
+ * Contiene los metodos getCilindrada y setCilindrada.
+ */
 public class Coche extends Vehiculo {
 	private int cilindrada;
 	protected Coche(int num_serie, int cilindrada, String fabricante, Color color) {
@@ -23,11 +23,18 @@ public class Coche extends Vehiculo {
 		this.color = color;
 	}
 
+/*
+ * Metodo getCilindrada
+ */
 	public int getCilindrada() {
 		return cilindrada;
 	}
 
-
+/*
+ * Metodo setCilindrada
+ * 
+ * @param cilindrada
+ */
 	public void setCilindrada(int cilindrada) {
 		this.cilindrada = cilindrada;
 	}
